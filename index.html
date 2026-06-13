@@ -269,10 +269,13 @@ button{font-family:var(--font-body)}
 /* Responsive */
 @media(min-width:520px){
   body{max-width:480px;margin:0 auto;border-left:1px solid var(--border);border-right:1px solid var(--border)}
-  .bot-nav,.app-hdr{max-width:480px;margin:0 auto}
-  .bot-nav{left:50%;transform:translateX(-50%)}
-  .bs{max-width:480px;left:50%;transform:translateX(-50%) translateY(100%)}
+  .app-hdr{max-width:480px;margin-left:auto;margin-right:auto;width:100%}
+  .bot-nav{left:50%;right:auto;transform:translateX(-50%);width:480px}
+  .bs{max-width:480px;left:50%;right:auto;transform:translateX(-50%) translateY(100%);width:480px}
   .bs.on{transform:translateX(-50%) translateY(0)}
+  .toast-box{max-width:480px}
+  #chat-bar{left:50% !important;right:auto !important;transform:translateX(-50%);width:480px}
+  .fab{right:calc(50% - 240px + 16px)}
 }
 </style>
 </head>
